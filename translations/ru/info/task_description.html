@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p>
+    У вас есть некоторое число и вы пытаетесь найти ближайшее "квадратичное" число. Квадратичное число - это такое число, квадратный корень которого - целое число. Например, если исследуемое число 8, два близких квадратичных числа - 4 (корень из 4 == 2) и 9 (корень из 9 == 3). Таким образом ответ 9, так как 9 ближе к 8, чем 4.
+</p>
+
+<!--
+<p style="text-align: center;">
+    <img  title="Worth of words" src="{{MEDIA}}example.jpg" alt="example" style="max-height: 283px"/>
+</p>
+-->
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Входные данные: </strong> Число
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> Ближайшее квадратичное число
+</p>
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Примеры:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">nearestSquare(8) == 9
+nearestSquare(13) == 16
+nearestSquare(24) == 25
+nearestSquare(9876) == 9801</pre>
+{% else %}
+<pre class="brush: python">nearest_square(8) == 9
+nearest_square(13) == 16
+nearest_square(24) == 25
+nearest_square(9876) == 9801</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>Как это используется: </strong>
+    Для математического анализа.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Предусловия</strong>:<br>
+    0 < number <= 1000000<br>
+</p>

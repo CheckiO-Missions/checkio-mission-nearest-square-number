@@ -1,0 +1,52 @@
+<!-- Describe task in general -->
+
+<p>
+    You have some number and you try to find the nearest 'square' number. Square number is the number whose square root is an integer. For example, if our start number is 8, two near square number are 4 (sqrt(4) == 2) and 9 (sqrt(9) == 3). So the answer is 9, because 9 is the nearest.
+</p>
+
+<!--
+<p style="text-align: center;">
+    <img  title="Worth of words" src="{{MEDIA}}example.jpg" alt="example" style="max-height: 283px"/>
+</p>
+-->
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> Number
+</p>
+
+<p>
+    <strong>Output: </strong> The nearest square number
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">nearestSquare(8) == 9
+nearestSquare(13) == 16
+nearestSquare(24) == 25
+nearestSquare(9876) == 9801</pre>
+{% else %}
+<pre class="brush: python">nearest_square(8) == 9
+nearest_square(13) == 16
+nearest_square(24) == 25
+nearest_square(9876) == 9801</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    For mathematical analysis.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    0 < number <= 1000000<br>
+</p>
