@@ -7,6 +7,8 @@ function nearestSquare(number) {
 
 var assert = require('assert');
 if (!global.is_checking) {
+    console.log('Example:')
+    console.log(nearestSquare(8))
 
     // These "asserts" are used for self-checking and not for an auto-testing
     assert.equal(nearestSquare(8), 9)
