@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="1200"
+   height="350"
+   viewBox="0 0 1200 350"
+   id="svg4383">
+  <metadata
+     id="metadata4387">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(64.631729,149.2893)"
+     id="Background">
+    <rect
+       style="fill:#000000;fill-opacity:0"
+       x="0"
+       y="0"
+       width="128"
+       height="128"
+       id="rect4366" />
+  </g>
+  <g
+     transform="translate(0,222)"
+     id="g4379">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:66.66666412px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Medium';letter-spacing:0px;word-spacing:0px;fill:#294270;fill-opacity:1;stroke:none"
+       x="59.990166"
+       y="100.99083"
+       id="text4934"><tspan
+         id="tspan4932"
+         x="59.990166"
+         y="100.99083"
+         style="font-size:93.33333588px;fill:#294270;fill-opacity:1"><tspan
+   style="font-size:100px;fill:#294270;fill-opacity:1"
+   id="tspan4940">√</tspan><tspan
+   id="tspan950"
+   style="fill:#fa8f00;fill-opacity:1">9</tspan> = 3 (integer)</tspan></text>
+    <path
+       style="fill:#ebeded;fill-opacity:1;stroke:#294270;stroke-width:9.516366;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 105.6917,25.11915 c 21.12597,0 42.25103,0 63.37518,0"
+       id="path4936" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:66.66666412px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Medium';letter-spacing:0px;word-spacing:0px;fill:#294270;fill-opacity:1;stroke:none"
+       x="58.99604"
+       y="-128.75563"
+       id="text4934-3"><tspan
+         id="tspan4932-6"
+         x="58.99604"
+         y="-128.75563"
+         style="font-size:93.33333588px;fill:#294270;fill-opacity:1"><tspan
+   style="font-size:100px;fill:#294270;fill-opacity:1"
+   id="tspan4940-7">√</tspan>7 = 2.646... (not integer)</tspan></text>
+    <path
+       style="fill:#ebeded;fill-opacity:1;stroke:#294270;stroke-width:9.516366;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 105.41166,-204.62733 c 21.12597,0 42.25103,0 63.37517,0"
+       id="path4936-5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:66.66666412px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Medium';letter-spacing:0px;word-spacing:0px;fill:#294270;fill-opacity:1;stroke:none"
+       x="60.84631"
+       y="-11.96446"
+       id="text4934-3-3"><tspan
+         id="tspan4932-6-5"
+         x="60.84631"
+         y="-11.96446"
+         style="font-size:93.33333588px;fill:#294270;fill-opacity:1"><tspan
+   style="font-size:100px;fill:#294270;fill-opacity:1"
+   id="tspan4940-7-6">√</tspan>8 = 2.828... (not integer)</tspan></text>
+    <path
+       style="fill:#ebeded;fill-opacity:1;stroke:#294270;stroke-width:9.516366;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 107.26193,-87.836148 c 21.12596,0 42.25102,0 63.37518,0"
+       id="path4936-5-2" />
+  </g>
+  <defs
+     id="defs4381" />
+</svg>

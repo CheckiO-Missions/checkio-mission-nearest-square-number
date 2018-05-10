@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg4383"
+   viewBox="0, 0, 128, 128"
+   height="128"
+   width="128"
+   y="0px"
+   x="0px"
+   version="1.1">
+  <metadata
+     id="metadata4387">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="Background">
+    <rect
+       id="rect4366"
+       fill-opacity="0"
+       fill="#000000"
+       height="128"
+       width="128"
+       y="0"
+       x="0" />
+  </g>
+  <g
+     id="g4379">
+    <path
+       id="path4369"
+       fill="#737370"
+       d="M18.092,6 L109.903,6 C116.552,6 122,11.441 122,18.096 L122,109.902 C122,116.559 116.552,122 109.903,122 L18.092,122 C11.436,122 6,116.559 6,109.902 L6,18.096 C6,11.441 11.436,6 18.092,6" />
+    <text
+       id="text4934"
+       y="105.86332"
+       x="6.7838187"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:66.66666412px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Medium';letter-spacing:0px;word-spacing:0px;fill:#82d1f5;fill-opacity:1;stroke:none;"
+       xml:space="preserve"><tspan
+         style="font-size:93.33333588px;fill:#82d1f5;fill-opacity:1;"
+         y="105.86332"
+         x="6.7838187"
+         id="tspan4932"><tspan
+   id="tspan4940"
+   style="font-size:100px;fill:#82d1f5;fill-opacity:1;">√</tspan>9</tspan></text>
+    <path
+       id="path4936"
+       d="m 53.199442,29.991631 c 21.125964,0 42.251025,0 63.375178,0"
+       style="fill:#ebeded;stroke:#82d1f5;stroke-width:9.516366;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1" />
+  </g>
+  <defs
+     id="defs4381" />
+</svg>
