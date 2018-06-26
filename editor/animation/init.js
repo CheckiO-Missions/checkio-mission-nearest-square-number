@@ -6,7 +6,7 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var $tryit;
 
         var io = new extIO({
-            multipleArguments: false,
+            multipleArguments: true,
             functions: {
                 python: 'nearest_square',
                 js: 'nearestSquare'
