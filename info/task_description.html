@@ -14,11 +14,11 @@
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> A number.
+    <strong>Input: </strong> An integer.
 </p>
 
 <p>
-    <strong>Output: </strong> The nearest square number.
+    <strong>Output: </strong> An integer.
 </p>
 
 
@@ -27,17 +27,7 @@
 <p>
 <strong>Example:</strong>
 </p>
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">nearestSquare(8) == 9
-nearestSquare(13) == 16
-nearestSquare(24) == 25
-nearestSquare(9876) == 9801</pre>
-{% else %}
-<pre class="brush: python">nearest_square(8) == 9
-nearest_square(13) == 16
-nearest_square(24) == 25
-nearest_square(9876) == 9801</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 <!-- Here you can explain how it can be used in development and what is usage of this. -->

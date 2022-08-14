@@ -1,0 +1,92 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Я уявлення не маю, як розв'язати цю місію.
+    </div>
+    <div class="answer">
+        Ідея у тому, щоб знайти квадратний корінь вхідного числа, округлити його
+        і звести до квадрату.
+    
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        З якого інструменту мені слід розпочати?
+    </div>
+    <div class="answer">
+        Тобі варто використати вбудовану функцію <a target="_blank" href="https://www.w3schools.com/python/ref_func_round.asp">round()</a>.
+        Без другого параметру вона округлює до найближчого цілого.
+        Саме те, що тобі потрібно! 
+<br>
+<br>
+        <pre class="brush: python">
+round(2.4)
+>>> 2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Добре, але яке число я маю заокруглювати з її допомогою?
+    </div>
+    <div class="answer">
+        Тобі потрібно знайти квадратний корінь вхідного числа. Це значить, що 
+        число підноситься до ступеня 1/2 або 0.5. Також використай оператор
+        зведення до степеня **:
+<br>
+<br>
+        <pre class="brush: python">
+round(num**0.5)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Що мені робити далі?
+    </div>
+    <div class="answer">
+        Оскільки функція повинна повертати найближче ціле число до вхідного числа
+        (яке є квадратним числом), ти маєш отримати квадрат числа, яке ти 
+        розрахував на попередньому кроці.
+<br>
+<br>
+        <pre class="brush: python">
+round(num**0.5)**2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Як має виглядати моє остаточне рішення?
+    </div>
+    <div class="answer">
+        Просто додай визначення функції:
+
+<br>
+<br>
+        <pre class="brush: python">
+def nearest_square(number: int) -> int:
+
+    return round(number**0.5)**2
+        </pre>
+    </div>
+        Є багато інших рішень цієї місії, які ти зможеш побачити, коли твоє
+        рішення успішно пройде всі тести. Наприклад, ти можеш використати модуль
+        math module і lambda вираз:
+        <br>
+        <br>
+        <pre class="brush: python">
+from math import pow
+
+    nearest_square = lambda num: pow(round(pow(num, 0.5)), 2)
+        </pre>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Дякую! Тепер я знаю і розумію більше! Все працює як слід!
+    </div>
+    <div class="answer">
+        Приємно це чути!
+    </div>
+</div>
+</body>
