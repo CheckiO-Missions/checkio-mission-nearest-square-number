@@ -65,23 +65,51 @@ def nearest_square(number: int) -> int:
     return round(number**0.5)**2
         </pre>
     </div>
-        There are a lot of other solution you be able to see after your solution
-        passes all tests successfully. For example, you may use math module and
-        lambda expression:
-        <br>
-        <br>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Show me more solutions! <br />
+        'Cause I wanna be a real Python Ninnjaa!
+    </div>
+    <div class="answer">
+        Sure, grab it!
+        <br />
+        <br />
         <pre class="brush: python">
 from math import pow
 
     nearest_square = lambda num: pow(round(pow(num, 0.5)), 2)
         </pre>
+        Double use of pow() function from pre-imported math module.
+        Pow stands for 'power' and takes two arguments: number and power to up
+        number to.
+        <br />
+        <br />
+        <pre class="brush: python">
+def nearest_square(number):
+
+    counter = 1
+    while True:
+        for sign in (1, -1):
+            value = number + counter * sign
+            if ((value) ** (1 / 2)).is_integer():
+                return value
+        counter += 1       
+        </pre>
+        In this solution we move from our value up and down first by 1, then 2, etc.
+        When the square root from calculated number is integer - its out answer.
+        <br />
+        <br />
+        If you click "Best solutions" at mission menu, you see a lot of other 
+        interesting solutions!
+    </div>
 </div>
 <div class="question-answer">
     <div class="question">
         Thanks! I know and understand more now! Everything works fine!
     </div>
     <div class="answer">
-        Glad to here it!
+        Glad to hear it!
     </div>
 </div>
 </body>

@@ -57,11 +57,10 @@ round(num**0.5)**2
 </div>
 <div class="question-answer">
     <div class="question">
-        Як має виглядати моє остаточне рішення?
+        То як має виглядати моє остаточне рішення?
     </div>
     <div class="answer">
         Просто додай визначення функції:
-
 <br>
 <br>
         <pre class="brush: python">
@@ -70,16 +69,45 @@ def nearest_square(number: int) -> int:
     return round(number**0.5)**2
         </pre>
     </div>
-        Є багато інших рішень цієї місії, які ти зможеш побачити, коли твоє
-        рішення успішно пройде всі тести. Наприклад, ти можеш використати модуль
-        math module і lambda вираз:
-        <br>
-        <br>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Покажи мені більше розв'язків! <br />
+        Адже я хочу стати справжнім Python ніндзя!
+    </div>
+    <div class="answer">
+        Звісно, тримай!
+        <br />
+        <br />
         <pre class="brush: python">
 from math import pow
 
     nearest_square = lambda num: pow(round(pow(num, 0.5)), 2)
         </pre>
+        Подвійне використання функції pow() з попередньо імпортованого модуля math.
+        Pow скорочено від 'power' і приймає два аргументи: число і степінь, до 
+        якого його піднести.
+        <br />
+        <br />
+        <pre class="brush: python">
+def nearest_square(number):
+
+    counter = 1
+    while True:
+        for sign in (1, -1):
+            value = number + counter * sign
+            if ((value) ** (1 / 2)).is_integer():
+                return value
+        counter += 1       
+        </pre>
+        У цьому розв'язку ми рухаємося від нашого значення вгору і вниз спочатку
+        на 1, потім на 2 і т.д. Коли корінь квадратний з розрахованого значення 
+        є цілим числом - це і буде наша відповідь.
+        <br />
+        <br />
+        Натискай "Best solutions" у меню місії і ти побачиш багато інших цікавих
+        розв'язків!
+    </div>
 </div>
 <div class="question-answer">
     <div class="question">
