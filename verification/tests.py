@@ -17,7 +17,7 @@ TESTS = {
         {
             "input": [13],
             "answer": 16
-        }
+        },
     ],
     "Extra": [
         {
@@ -28,9 +28,9 @@ TESTS = {
             "input": [9876],
             "answer": 9801
         },
-	{
+	    {
             "input": [998500],
             "answer": 998001
-        }
+        },
     ]
 }
