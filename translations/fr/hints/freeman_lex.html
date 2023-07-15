@@ -1,0 +1,118 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Je n'ai aucune idée de la manière de commencer à résoudre cette mission.
+    </div>
+    <div class="answer">
+        <p>
+            Trouvez une idée 💡! Pour trouver la racine carrée d'un nombre d'entrée, il faut l'arrondir et l'élever au carré.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        De quel instrument dois-je partir?
+    </div>
+    <div class="answer">
+        <p>
+            Vous devriez utiliser la fonction python intégrée <a target="_blank" href="https://www.w3schools.com/python/ref_func_round.asp">round()</a>. Sans deuxième argument, elle arrondit le nombre à l'entier le plus proche. 
+        </p>
+        <pre class="brush: python">
+round(2.4) == 2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        D'accord, mais quel nombre dois-je arrondir?
+    </div>
+    <div class="answer">
+        <p>
+            Vous devez obtenir la racine carrée de votre nombre d'entrée. Cela signifie que la puissance
+        du nombre est 1/2 ou 0,5. Utilisez également l'opérateur de puissance **:
+        </p>
+        <pre class="brush: python">
+round(num**0.5)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Que dois-je faire ensuite?
+    </div>
+    <div class="answer">
+        <p>
+           Puisque la fonction doit renvoyer l'entier le plus proche du nombre d'entrée 
+        (qui est un nombre carré), vous devriez obtenir le nombre carré du nombre que vous avez calculé à l'étape précédente
+        calculé à l'étape précédente. 
+        </p>
+        <pre class="brush: python">
+round(num**0.5)**2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        À quoi devrait ressembler ma solution finale?
+    </div>
+    <div class="answer">
+        <p>
+            Il suffit d'ajouter la définition de la fonction:
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def nearest_square(number: int) -> int:
+
+    return round(number**0.5)**2
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Montrez-moi d'autres solutions! <br />
+        parce que je veux être un vrai Python 🥇 Ninnjaa!
+    </div>
+    <div class="answer">
+        <p>Bien sûr, prenez-le!</p>
+        <p>
+            Double utilisation de la fonction pow() du module mathématique préimporté. Pow signifie "puissance" et prend deux arguments: le nombre et la puissance à laquelle le nombre doit être élevé.  
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+from math import pow
+
+nearest_square = lambda num: pow(round(pow(num, 0.5)), 2)
+        </pre>
+        </div>
+        <p>
+            Dans cette solution, nous augmentons et diminuons notre valeur d'abord de 1, puis de 2, etc. Lorsque la racine carrée du nombre calculé est un entier, la réponse est obtenue.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def nearest_square(number):
+
+    counter = 1
+    while True:
+        for sign in (1, -1):
+            value = number + counter * sign
+            if ((value) ** (1 / 2)).is_integer():
+                return value
+        counter += 1       
+        </pre>
+        </div>
+        <p>
+            Si vous cliquez sur <b>Best Solutions</b> dans le menu mission, vous verrez de nombreuses autres solutions intéressantes! 
+        solutions intéressantes!
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Je vous remercie! Je comprends mieux maintenant! Tout fonctionne bien!
+    </div>
+    <div class="answer">
+        Heureux de l'apprendre 👍!
+    </div>
+</div>
+</body>
