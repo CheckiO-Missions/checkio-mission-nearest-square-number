@@ -37,8 +37,8 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "nearest_square", # check function name!
-            "js": "nearestSquare"      # check function name!
+            "python": "nearest_square",
+            "js": "nearestSquare"
         },
         cover_code={
             'python-3': {},

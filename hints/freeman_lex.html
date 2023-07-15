@@ -4,7 +4,9 @@
         I have no idea how to start solving this mission.
     </div>
     <div class="answer">
-        The idea is to find square root from input number, round and square up it.
+        <p>
+            Catch an idea 💡! To find square root from input number, round and square up it.
+        </p>
     </div>
 </div>
 <div class="question-answer">
@@ -12,13 +14,11 @@
         What instrument should I start from?
     </div>
     <div class="answer">
-        You should use python build-in <a target="_blank" href="https://www.w3schools.com/python/ref_func_round.asp">round()</a> function.
-        Without second argument it rounds number to the nearest integer. 
-<br>
-<br>
+        <p>
+            You should use python build-in <a target="_blank" href="https://www.w3schools.com/python/ref_func_round.asp">round()</a> function. Without second argument it rounds number to the nearest integer. 
+        </p>
         <pre class="brush: python">
-round(2.4)
->>> 2
+round(2.4) == 2
         </pre>
     </div>
 </div>
@@ -27,10 +27,10 @@ round(2.4)
         Ok, but what number should I round?
     </div>
     <div class="answer">
-        You need to get square root from your input number. It means that power
+        <p>
+            You need to get square root from your input number. It means that power
         of the number is 1/2 or 0.5. Use power operator ** also:
-<br>
-<br>
+        </p>
         <pre class="brush: python">
 round(num**0.5)
         </pre>
@@ -41,11 +41,11 @@ round(num**0.5)
         What I have to do next?
     </div>
     <div class="answer">
-        Since the function should return nearest integer to the input number 
+        <p>
+           Since the function should return nearest integer to the input number 
         (which is square number), you should get square number of the number you
-        calculated on previous step.
-<br>
-<br>
+        calculated on previous step. 
+        </p>
         <pre class="brush: python">
 round(num**0.5)**2
         </pre>
@@ -56,35 +56,39 @@ round(num**0.5)**2
         How my final solution should look like?
     </div>
     <div class="answer">
-        Just add function definition:
-<br>
-<br>
+        <p>
+            Just add function definition:
+        </p>
+        <div class="spoiler">
         <pre class="brush: python">
 def nearest_square(number: int) -> int:
 
     return round(number**0.5)**2
         </pre>
+        </div>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
         Show me more solutions! <br />
-        'Cause I wanna be a real Python Ninnjaa!
+        'Cause I wanna be a real Python 🥇 Ninnjaa!
     </div>
     <div class="answer">
-        Sure, grab it!
-        <br />
-        <br />
+        <p>Sure, grab it!</p>
+        <p>
+            Double use of pow() function from pre-imported math module. Pow stands for 'power' and takes two arguments: number and power to up number to.  
+        </p>
+        <div class="spoiler">
         <pre class="brush: python">
 from math import pow
 
-    nearest_square = lambda num: pow(round(pow(num, 0.5)), 2)
+nearest_square = lambda num: pow(round(pow(num, 0.5)), 2)
         </pre>
-        Double use of pow() function from pre-imported math module.
-        Pow stands for 'power' and takes two arguments: number and power to up
-        number to.
-        <br />
-        <br />
+        </div>
+        <p>
+            In this solution we move from our value up and down first by 1, then 2, etc. When the square root from calculated number is integer - its out answer.
+        </p>
+        <div class="spoiler">
         <pre class="brush: python">
 def nearest_square(number):
 
@@ -96,12 +100,11 @@ def nearest_square(number):
                 return value
         counter += 1       
         </pre>
-        In this solution we move from our value up and down first by 1, then 2, etc.
-        When the square root from calculated number is integer - its out answer.
-        <br />
-        <br />
-        If you click "Best solutions" at mission menu, you see a lot of other 
+        </div>
+        <p>
+            If you click <b>Best Solutions</b> at mission menu, you see a lot of other 
         interesting solutions!
+        </p>
     </div>
 </div>
 <div class="question-answer">
@@ -109,7 +112,7 @@ def nearest_square(number):
         Thanks! I know and understand more now! Everything works fine!
     </div>
     <div class="answer">
-        Glad to hear it!
+        Glad to hear it 👍!
     </div>
 </div>
 </body>
