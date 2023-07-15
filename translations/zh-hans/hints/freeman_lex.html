@@ -1,0 +1,118 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        我不知道如何开始解决这项任务。
+    </div>
+    <div class="answer">
+        <p>
+            给你个建议💡！从输入的数字中求平方根，将它四舍五入并平方。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        我应该从什么仪器开始？
+    </div>
+    <div class="answer">
+        <p>
+            您应该使用 python 内置的<a target="_blank" href="https://www.w3schools.com/python/ref_func_round.asp">round()</a> 函数。在没有第二个参数的情况下，它将数字取整到最接近的整数。 
+        </p>
+        <pre class="brush: python">
+round(2.4) == 2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        好的，但是我应该将哪个数字四舍五入呢？
+    </div>
+    <div class="answer">
+        <p>
+            您需要从输入的数字中得到平方根。这意味着
+        为1/2或0.5。也可以使用幂运算符**：
+        </p>
+        <pre class="brush: python">
+round(num**0.5)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        我下一步要做什么？
+    </div>
+    <div class="answer">
+        <p>
+           因为函数应该返回与输入数（即平方数）最接近的整数。 
+        (是平方数），您应该得到上一步计算出的数字的平方数。
+        的平方数。 
+        </p>
+        <pre class="brush: python">
+round(num**0.5)**2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        我的最终解决方案应该是怎样的？
+    </div>
+    <div class="answer">
+        <p>
+            只需添加函数定义：
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def nearest_square(number: int) -> int:
+
+    return round(number**0.5)**2
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        告诉我更多的解决方案！<br />
+        因为我想成为一个真正的 Python 🥇 Ninnjaa！
+    </div>
+    <div class="answer">
+        <p>当然，抓住它！</p>
+        <p>
+            双重使用预导入数学模块中的 pow() 函数。Pow 代表 "幂"，有两个参数：数值和数值的幂。  
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+from math import pow
+
+nearest_square = lambda num: pow(round(pow(num, 0.5)), 2)
+        </pre>
+        </div>
+        <p>
+            在本解 决方案中，我们首先将数值向上和向下移动 1，然后是 2，等等。当计算出的数值的平方根为整数时，答案就出来了。
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def nearest_square(number):
+
+    counter = 1
+    while True:
+        for sign in (1, -1):
+            value = number + counter * sign
+            if ((value) ** (1 / 2)).is_integer():
+                return value
+        counter += 1       
+        </pre>
+        </div>
+        <p>
+            如果您点击任务菜单中的<b>Best Solutions</b> ，您会看到很多其他有趣的解法。 
+        有趣的解决方案！
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        谢谢！我现在知道并理解得更多了！一切正常！
+    </div>
+    <div class="answer">
+        很高兴听到这个消息👍！
+    </div>
+</div>
+</body>

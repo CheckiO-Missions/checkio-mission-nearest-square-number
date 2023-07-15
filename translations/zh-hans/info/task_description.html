@@ -1,0 +1,44 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    您有一些数字，您正试图找出最接近的平方数（完全平方）。平方数是其平方根为整数的数。例如，如果我们从数字 8 开始，那么附近的两个平方数是 4 (sqrt(4) == 2) 和 9 (sqrt(9) == 3)。所以答案是 9，因为 9 是最近的。
+</p>
+
+<p style="text-align: center;">
+    <img  title="Square number" src="{{MEDIA}}example.png" alt="example" style="max-height: 100px"/>
+</p>
+
+<p style="text-align: center;">
+    <img  title="Square number" src="{{MEDIA}}example1.png" alt="example" style="max-height: 70px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>一个整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出</strong>一个整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>示例</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+   <strong>如何使用：</strong>
+    用于数学分析。
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>前提条件</strong><br>
+    0 &lt; 数字 &lt;= 1000000<br>
+</p>
