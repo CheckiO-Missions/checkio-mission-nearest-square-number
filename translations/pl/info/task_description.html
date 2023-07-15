@@ -1,0 +1,44 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Mają Państwo pewną liczbę i próbują znaleźć najbliższą jej liczbę kwadratową (idealny kwadrat). Liczba kwadratowa to liczba, której pierwiastek kwadratowy jest liczbą całkowitą. Na przykład, jeśli zaczniemy od liczby 8, to dwie najbliższe liczby kwadratowe to 4 (sqrt(4) == 2) i 9 (sqrt(9) == 3). Zatem odpowiedzią jest 9, ponieważ 9 jest najbliższą liczbą.
+</p>
+
+<p style="text-align: center;">
+    <img  title="Square number" src="{{MEDIA}}example.png" alt="example" style="max-height: 100px"/>
+</p>
+
+<p style="text-align: center;">
+    <img  title="Square number" src="{{MEDIA}}example1.png" alt="example" style="max-height: 70px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Wejście:</strong> Liczba całkowita <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Liczba całkowita <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Przykłady:</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+   <strong>Jak jest używany:</strong>
+    Do analizy matematycznej.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Warunek wstępny:</strong><br>
+    0 &lt; liczba &lt;= 1000000<br>
+</p>
