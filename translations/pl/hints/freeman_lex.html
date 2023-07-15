@@ -1,0 +1,118 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Nie mam pojęcia, jak zacząć rozwiązywać tę misję.
+    </div>
+    <div class="answer">
+        <p>
+            Proszę złapać pomysł 💡! Aby znaleźć pierwiastek kwadratowy z liczby wejściowej, proszę ją zaokrąglić i podnieść do kwadratu.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Od jakiego instrumentu powinienem zacząć?
+    </div>
+    <div class="answer">
+        <p>
+            Powinien Pan użyć wbudowanej funkcji Pythona <a target="_blank" href="https://www.w3schools.com/python/ref_func_round.asp">round()</a>. Bez drugiego argumentu zaokrągla ona liczbę do najbliższej liczby całkowitej. 
+        </p>
+        <pre class="brush: python">
+round(2.4) == 2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ok, ale jaką liczbę powinienem zaokrąglić?
+    </div>
+    <div class="answer">
+        <p>
+            Musi Pan otrzymać pierwiastek kwadratowy z liczby wejściowej. Oznacza to, że potęga
+        liczby wynosi 1/2 lub 0,5. Proszę również użyć operatora potęgi **:
+        </p>
+        <pre class="brush: python">
+round(num**0.5)
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Co mam dalej zrobić?
+    </div>
+    <div class="answer">
+        <p>
+           Ponieważ funkcja powinna zwrócić liczbę całkowitą najbliższą liczbie wejściowej 
+        (która jest liczbą kwadratową), powinien Pan otrzymać liczbę kwadratową liczby, którą Pan
+        obliczonej w poprzednim kroku. 
+        </p>
+        <pre class="brush: python">
+round(num**0.5)**2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Jak powinno wyglądać moje ostateczne rozwiązanie?
+    </div>
+    <div class="answer">
+        <p>
+            Proszę dodać definicję funkcji:
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def nearest_square(number: int) -> int:
+
+    return round(number**0.5)**2
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Proszę mi pokazać więcej rozwiązań! <br />
+        bo chcę być prawdziwym Pythonem 🥇 Ninnjaa!
+    </div>
+    <div class="answer">
+        <p>Jasne, proszę łapać!</p>
+        <p>
+            Podwójne użycie funkcji pow() z wstępnie zaimportowanego modułu matematycznego. Pow oznacza "potęgę" i przyjmuje dwa argumenty: liczbę i potęgę, do której ma zostać podniesiona liczba.  
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+from math import pow
+
+nearest_square = lambda num: pow(round(pow(num, 0.5)), 2)
+        </pre>
+        </div>
+        <p>
+            W tym rozwiązaniu przechodzimy od naszej wartości w górę i w dół najpierw o 1, potem o 2 itd. Gdy pierwiastek kwadratowy z obliczonej liczby jest liczbą całkowitą - jest to nasza odpowiedź.
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def nearest_square(number):
+
+    counter = 1
+    while True:
+        for sign in (1, -1):
+            value = number + counter * sign
+            if ((value) ** (1 / 2)).is_integer():
+                return value
+        counter += 1       
+        </pre>
+        </div>
+        <p>
+            Jeśli klikną Państwo <b>Best Solutions</b> w menu misji, zobaczą Państwo wiele innych 
+        ciekawych rozwiązań!
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Dzięki! Teraz wiem i rozumiem więcej! Wszystko działa jak należy!
+    </div>
+    <div class="answer">
+        Miło mi to słyszeć 👍!
+    </div>
+</div>
+</body>
