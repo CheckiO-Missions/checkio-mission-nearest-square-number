@@ -1,11 +1,7 @@
 <!-- Describe task in general -->
 
-<p>
-    Тобі дано ціле число і потрібно знайти найближче до нього 
-    ціле число, яке в свою чергу є квадратом цілого числа.
-    Наприклад, якщо почати з числа 8, тоді два найближчі квадратні числа це 4
-    (квадрат числа 2) і 9 (квадрат числа 3).
-    Тож правильна відповідь 9, оскільки воно ближче до 8, ніж 4.
+<p style="text-align: justify;">
+    У вас є деяке число, і ви намагаєтесь знайти найближче квадратне число (досконалий квадрат). Квадратне число - це число, квадратний корінь з якого є цілим числом. Наприклад, якщо ми почнемо з числа 8, то два найближчих квадратних числа будуть 4 (sqrt(4) == 2) і 9 (sqrt(9) == 3). Отже, відповідь - 9, тому що 9 є найближчим.
 </p>
 
 <p style="text-align: center;">
@@ -18,11 +14,11 @@
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Вхідні дані:</strong> Ціле число.
+   <strong>Вхідні дані:</strong> Ціле число <span>({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 <p>
-    <strong>Вихідні дані:</strong> Ціле число.
+   <strong>Вихідні дані:</strong> Ціле число <span>({% if is_js %}number{% else %}int{% endif %})</span>.
 </p>
 
 
@@ -37,12 +33,12 @@
 <!-- Here you can explain how it can be used in development and what is usage of this. -->
 <!-- The section is optional -->
 <p class="for_info_only">
-    <strong>Як це використовується:</strong>
-    У математичному аналізі.
+   <strong>Як використовується:</strong>
+    Для математичного аналізу.
 </p>
 
 <!-- Here you can explain some constraints for input-->
 <!-- The section is optional -->
-<p><strong>Передумови:</strong>:<br>
-    0 < num <= 1000000<br>
+<p><strong>Передумова:</strong><br>
+    0 &lt; число &lt;= 1000000<br>
 </p>
