@@ -1,0 +1,44 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Vous disposez d'un certain nombre et vous essayez de trouver le nombre carré le plus proche (un carré parfait). Un nombre carré est un nombre dont la racine carrée est un entier. Par exemple, si nous commençons par le nombre 8, les deux nombres carrés les plus proches sont 4 (sqrt(4) == 2) et 9 (sqrt(9) == 3). La réponse est donc 9, car 9 est le plus proche.
+</p>
+
+<p style="text-align: center;">
+    <img  title="Square number" src="{{MEDIA}}example.png" alt="example" style="max-height: 100px"/>
+</p>
+
+<p style="text-align: center;">
+    <img  title="Square number" src="{{MEDIA}}example1.png" alt="example" style="max-height: 70px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Un entier <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Un entier <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Exemples:</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+   <strong>Comment l'utiliser:</strong>
+    Pour l'analyse mathématique.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Condition préalable:</strong><br>
+    0 &lt; nombre &lt;= 1000000<br>
+</p>
