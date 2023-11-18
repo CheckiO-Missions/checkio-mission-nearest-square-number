@@ -1,0 +1,44 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Sie haben eine Zahl und versuchen, die nächstliegende Quadratzahl (ein perfektes Quadrat) zu finden. Eine Quadratzahl ist die Zahl, deren Quadratwurzel eine ganze Zahl ist. Wenn wir zum Beispiel mit der Zahl 8 beginnen, dann sind die beiden nächstliegenden Quadratzahlen 4 (sqrt(4) == 2) und 9 (sqrt(9) == 3). Die Antwort ist also 9, denn 9 ist die nächstgelegene Zahl.
+</p>
+
+<p style="text-align: center;">
+    <img  title="Square number" src="{{MEDIA}}example.png" alt="example" style="max-height: 100px"/>
+</p>
+
+<p style="text-align: center;">
+    <img  title="Square number" src="{{MEDIA}}example1.png" alt="example" style="max-height: 70px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Eine ganze Zahl <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Eine ganze Zahl <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Beispiele:</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+   <strong>Wie sie verwendet wird:</strong>
+    Für mathematische Analysen.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Vorbedingung:</strong><br>
+    0 &lt; Zahl &lt;= 1000000<br>
+</p>
